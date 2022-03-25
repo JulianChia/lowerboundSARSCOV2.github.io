@@ -1,6 +1,6 @@
 title: "Singapore’s SARS-CoV-2 Infection Trend In 2020: A Lower Bound Estimate"
-description: Manuscript, source codes and data sets on estimating Singapore’s lower-bound SARS-CoV-2 Infection Trend In 2020.
-show_downloads: true
+description: "By Julian Chia, 1st March 2022"
+show_downloads: false
 google_analytics:
 theme: jekyll-theme-leap-day
 email: julianchiayh@gmail.com
