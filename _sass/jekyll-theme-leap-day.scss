@@ -13,7 +13,7 @@ body {
   font-weight:300;
   margin: 0px;
   padding:0px 0 20px 0px;
-  background: url(../images/body-background.png) #eae6d1;
+  background: url(../images/body-background.png) #fbfbfb;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -48,7 +48,7 @@ h3 {
 }
 
 a {
-  color:#4276b6;
+  color:blue;
   font-weight:400;
   text-decoration:none;
 }
@@ -162,7 +162,7 @@ dt {
 }
 
 header {
-  padding: 25px 20px 30px 10px;
+  padding: 25px 20px 20px 10px;
   margin: 0;
   position: fixed;
   top: 0;
@@ -170,7 +170,7 @@ header {
   right:0;
   width: 100%;
   text-align: center;
-  background: url(../images/background.png) #4276b6;
+  background: url(../images/background.png) #75080b;
   box-shadow: 1px 0px 2px rgba(0,0,0,.75);
   z-index:99;
   -webkit-font-smoothing:antialiased;
@@ -198,25 +198,28 @@ header {
 
 #banner {
   z-index: 100;
-  left:0;
+  // left:0;
   right:50%;
   height: 50px;
   margin-right:-382px;
   position: fixed;
-  top: 123px;
-  background: #ffcc00;
-  border: 1px solid #f0b500;
-  box-shadow: 0px 1px 3px rgba(0,0,0,.25);
-  border-radius: 0px 2px 2px 0px;
+  top: 73px;
+  // top: 123px;
+  // background: #ffcc00;
+  background: #rgba(255,0,0,0.3);
+  // border: 1px solid #f0b500;
+  // box-shadow: 0px 1px 3px rgba(0,0,0,.25);
+  // border-radius: 0px 2px 2px 0px;
   padding-right: 10px;
 
   .button {
-    border: 1px solid #dba500;
-    background: linear-gradient(rgb(255, 231, 136), rgb(255, 206, 56));
+    border: 1px solid rgba(200, 16, 49, 0.6);
+    // background: linear-gradient(rgb(255, 231, 136), rgb(255, 206, 56));
+    background: linear-gradient(rgb(156, 35, 31), rgb(200, 16, 49));
     border-radius: 2px;
-    box-shadow: inset 0px 1px 0px rgba(255,255,255,.4), 0px 1px 1px rgba(0,0,0,.1);
-    background-color: #FFE788;
-    margin-left: 5px;
+    box-shadow: inset 0px 1px 0px rgba(200, 16, 49, 0.8), 0px 1px 1px rgba(0, 0, 0, .1);
+    background-color: rgba(200, 16, 49, 0.6);
+    margin-left: -50px;
     padding: 10px 12px;
     margin-top: 6px;
     line-height:14px;
@@ -227,20 +230,21 @@ header {
     text-align:center;
 
     &:hover {
-      background: linear-gradient(rgb(255, 231, 136), rgb(255, 231, 136));
-      background-color: #ffeca0;
+      background: linear-gradient(rgb(240,44,50), rgb(247,151,154));
+      background-color: rgb(240,44,50);
     }
   }
 
   .fork {
     position:fixed;
     left:50%;
-    margin-left:-325px;
+    margin-left:-425px;
     padding: 10px 12px;
     margin-top: 6px;
     line-height:14px;
     font-size:14px;
-    background-color: #FFE788;
+    // background-color: #FFE788;
+    background-color: rgba(200,16,49,0.6);
   }
 
   .downloads {
@@ -288,9 +292,9 @@ section {
   width:590px;
   padding: 30px 30px 50px 30px;
   margin: 20px 0;
-  margin-top: 190px;
+  margin-top: 150px;
   position:relative;
-  background: #fbfbfb;
+  background: #fff;
   border-radius: 3px;
   border: 1px solid #cbcbcb;
   box-shadow: 0px 1px 2px rgba(0,0,0,.09), inset 0px 0px 2px 2px rgba(255,255,255,.5), inset 0 0 5px 5px rgba(255,255,255,.4);
@@ -303,7 +307,7 @@ small {
 nav {
   width: 230px;
   position: fixed;
-  top: 220px;
+  top: 180px;
   left:50%;
   margin-left:-580px;
   text-align: left;
@@ -360,8 +364,9 @@ nav {
     }
 
     .active {
-      border-right:solid 4px #39C;
-      padding-right:13px;
+      // border-right:solid 4px #39C;
+      border-left:solid 4px #C81031;
+      padding-left:5px;
     }
   }
 }
@@ -371,7 +376,7 @@ footer {
   position: fixed;
   right:50%;
   margin-right:-500px;
-  top:220px;
+  top:180px;
   text-align: left;
   line-height: 16px;
 }
@@ -418,7 +423,7 @@ footer {
     border:1px solid #e5e5e5;
     border-width:1px 0;
     padding:20px 0;
-    margin: 190px auto 20px;
+    margin: 150px auto 20px;
     max-width: 600px;
   }
 
