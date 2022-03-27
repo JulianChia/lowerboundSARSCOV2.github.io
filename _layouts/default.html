@@ -17,44 +17,54 @@
   </head>
   <body>
 
-      <header>
-        <h1>Singapore’s SARS-CoV-2 Infection Trend In 2020: <br> A Lower Bound Estimate</h1>
-      </header>
 
-      <div id="banner">
-        <span id="logo"></span>
+    <header>
+      <h1>Singapore’s SARS-CoV-2 Infection Trend<br>In 2020: A Lower Bound Estimate</h1>
+    </header>
 
-        <a href="{{ site.github.repository_url }}" class="button fork"><strong>View On GitHub</strong></a>
-        {% if site.show_downloads %}
-          <div class="downloads">
-            <span>Downloads:</span>
-            <ul>
-              <li><a href="{{ site.github.zip_url }}" class="button">ZIP</a></li>
-              <li><a href="{{ site.github.tar_url }}" class="button">TAR</a></li>
-            </ul>
-          </div>
-        {% endif %}
-      </div><!-- end banner -->
+    <div id="banner">
+      <span id="logo"></span>
+
+      <div class="repo">
+        <span>Github Repository:</span>
+        <a href="{{ site.github.repository_url }}" class="button"></a>
+      </div>
+
+      {% if site.show_downloads %}
+        <div class="download-pdf">
+          <span>Download PDF:</span>
+          <a href="https://github.com/JulianChia/lowerboundSARSCOV2/raw/main/Singapore%E2%80%99s%20SARS-CoV-2%20Infection%20Trend%20In%202020:%20A%20Lower%20Bound%20Estimate.pdf"
+            class="button"></a>
+        </div>
+      {% endif %}
+
+    </div><!-- end banner -->
+
 
     <div class="wrapper">
       <nav>
         <ul></ul>
       </nav>
+
       <section>
         {{ content }}
-
       </section>
-      <footer>
-        {% if site.github.is_project_page %}
-          <p>Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
-        <p><small>Hosted on GitHub Pages &mdash;
-            Theme by <a href="https://twitter.com/mattgraham">mattgraham</a>;
-                Modified by <a href="https://github.com/JulianChia/lowerboundSARSCOV2.github.io">JulianChia
-                </a>
-            </small>
-        </p>
-      </footer>
+
     </div>
+
+    <footer>
+      {% if site.github.is_project_page %}
+        <p>Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+      {% endif %}
+      <p><small>Hosted on GitHub Pages &mdash;
+          Theme by <a href="https://twitter.com/mattgraham">mattgraham</a>;
+              Modified by <a href="https://github.com/JulianChia/lowerboundSARSCOV2.github.io">JulianChia
+              </a>
+          </small>
+      </p>
+    </footer>
+    
+
   </body>
+
 </html>
