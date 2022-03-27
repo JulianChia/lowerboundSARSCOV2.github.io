@@ -163,7 +163,7 @@ dt {
 
 
 header {
-  padding: 10px 10px 50px 10px;
+  padding: 10px 10px 42px 10px;
   margin: 0;
   position: fixed;
   top: 0;
@@ -195,11 +195,11 @@ header {
 #banner {
   z-index: 100;
   position: fixed;
-  top: 97px;
+  top: 95px;
   left:0px;
   right:0px;
   height: 47px;
-  background: #rgba(117, 8, 11, 0s.1);
+  background-color: #rgba(117, 8, 11, 1.0);
 
   .button {
     transition: all .5s ease;
@@ -212,7 +212,6 @@ header {
     line-height: 1;
     font-size: 14px;
     background-color : transparent;
-    // padding: 10px;
     outline: none;
     margin-top: 6px;
 
@@ -469,34 +468,45 @@ footer {
 //   }
 // }
 //
-// @media print, screen and (max-width: 480px) {
-//
-//   body {
-//   }
-//
-//   header{
-//     position: relative;
-//     padding: 5px 0px;
-//     min-height: 0px;
-//
-//     h1 {
-//       font-size: 24px;
-//       white-space: nowrap;
-//       overflow: hidden;
-//       // text-overflow: ellipsis;
-//       // -o-text-overflow: ellipsis;
-//       // -ms-text-overflow: ellipsis;
-//     }
-//   }
-//   section {
-//     margin-top: 5px;
-//   }
-//
-//   #banner { display: none;}
-//   header ul {
-//     display:none;
-//   }
-// }
+@media print {
+  body {}
+  header{
+    position: relative;
+    // padding: 5px 0px;
+    min-height: 0px;
+    h1 {
+      // font-size: 24px;
+      white-space: nowrap;
+      overflow: hidden;
+      // text-overflow: ellipsis;
+      // -o-text-overflow: ellipsis;
+      // -ms-text-overflow: ellipsis;
+    }
+  }
+  section {margin-top: 5px;}
+  #banner { display: none;}
+  header ul {display:none;}
+}
+
+@media screen and (max-width: 480px) {
+  body {}
+  header{
+    position: relative;
+    padding: 5px 0px;
+    min-height: 0px;
+    h1 {
+      font-size: 24px;
+      white-space: nowrap;
+      overflow: hidden;
+      // text-overflow: ellipsis;
+      // -o-text-overflow: ellipsis;
+      // -ms-text-overflow: ellipsis;
+    }
+  }
+  section {margin-top: 5px;}
+  // #banner { display: none;}
+  header ul {display:none;}
+}
 //
 // @media print {
 //
