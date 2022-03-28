@@ -432,7 +432,7 @@ footer {
     margin: 0;
 
     h1 {
-      font-size: 32px;
+      font-size: 28px;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -442,7 +442,7 @@ footer {
   }
 
   #banner {
-    top: 80px;
+    top: 60px;
   }
 
   section {
@@ -467,7 +467,10 @@ footer {
       -ms-text-overflow: ellipsis;
     }
   }
-  #banner { display: none;}
+  // #banner { display: none;}
+  #banner {
+      top: 60px;
+    }
   section {
     margin-top: 5px;
     width: auto
