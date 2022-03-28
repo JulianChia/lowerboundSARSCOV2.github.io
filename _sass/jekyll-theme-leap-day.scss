@@ -466,7 +466,10 @@ footer {
     }
   }
   #banner { display: none;}
-  section {margin-top: 5px;}
+  section {
+    margin-top: 5px;
+    width: auto;
+  }
 }
 @media print {
   body {}
