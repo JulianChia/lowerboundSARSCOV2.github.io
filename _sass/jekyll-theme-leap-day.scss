@@ -397,9 +397,6 @@ footer {
 //         margin-right: 60px;
 //       }
 //
-//     .fork {
-//     }
-//
 //     #logo {
 //       margin-right: 15px;
 //     }
@@ -440,21 +437,10 @@ footer {
 //       -o-text-overflow: ellipsis;
 //       -ms-text-overflow: ellipsis;
 //     }
-//
-//     p { display: none;}
 //   }
 //
 //   #banner {
 //     top: 80px;
-//
-//     .fork {
-//       float: left;
-//       display: inline-block;
-//       margin-left: 0px;
-//     position:fixed;
-//     left:20px;
-//
-//       }
 //   }
 //
 //   section {
@@ -462,12 +448,26 @@ footer {
 //     margin-bottom: 0px;
 //     width: auto;
 //   }
-//
-//   header ul, header p.view {
-//     position:static;
-//   }
 // }
 //
+@media screen and (max-width: 480px) {
+  body {}
+  header{
+    position: relative;
+    padding: 5px 0px;
+    min-height: 0px;
+    h1 {
+      font-size: 24px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -o-text-overflow: ellipsis;
+      -ms-text-overflow: ellipsis;
+    }
+  }
+  #banner { display: none;}
+  section {margin-top: 5px;}
+}
 @media print {
   body {}
   header{
@@ -485,28 +485,7 @@ footer {
   }
   section {margin-top: 5px;}
   #banner { display: none;}
-  header ul {display:none;}
 }
-
-// @media screen and (max-width: 480px) {
-//   body {}
-//   header{
-//     position: relative;
-//     padding: 5px 0px;
-//     min-height: 0px;
-//     h1 {
-//       font-size: 24px;
-//       white-space: nowrap;
-//       overflow: hidden;
-//       // text-overflow: ellipsis;
-//       // -o-text-overflow: ellipsis;
-//       // -ms-text-overflow: ellipsis;
-//     }
-//   }
-//   section {margin-top: 5px;}
-//   // #banner { display: none;}
-//   header ul {display:none;}
-// }
 //
 // @media print {
 //
