@@ -455,10 +455,10 @@ footer {
   body {}
   header{
     position: relative;
-    padding: 5px 0px;
+    padding: 5px 0px 30px;
     min-height: 0px;
     h1 {
-      font-size: 24px;
+      font-size: 22px;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -468,9 +468,29 @@ footer {
   }
   // #banner { display: none;}
   #banner {
-      position: relative;
-      top: -40px;
+    position: relative;
+    top: -40px;
+    .repo {
+      span {
+        position: relative;
+        left: 20px;
+      }
+      a.button {
+        position: relative;
+        left: 20px;
+      }
     }
+    .download-pdf {
+      span {
+        position: relative;
+        left: -20px;
+      }
+      a.button {
+        position: relative;
+        left: -20px;
+      }
+    }
+  }
   section {
     margin-top: 5px;
     width: auto
