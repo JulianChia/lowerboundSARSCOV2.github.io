@@ -369,20 +369,18 @@ footer {
   line-height: 16px;
 }
 
-@media print, screen and (max-width: 1060px) {
 
+// ALTER LAYOUT FOR DIFFERENT MEDIA TYPES
+@media print, screen and (max-width: 1060px) {
   div.wrapper {
     width:auto;
     margin:0;
   }
 
-  nav{
-    display: none;
-  }
+  nav{display: none;}
 
   header, section, footer {
     float:none;
-
     h1 {
       white-space: nowrap;
       overflow: hidden;
@@ -392,18 +390,8 @@ footer {
     }
   }
 
-  #banner {
-    width: 100%;
-
-    .download-pdf {
-        margin-right: 60px;
-      }
-
-    #logo {
-      margin-right: 15px;
-    }
-  }
-
+  // header {padding: 10px 10px 42px 10px;}
+  #banner {}
   section {
     border:1px solid #e5e5e5;
     border-width:1px 0;
@@ -411,24 +399,17 @@ footer {
     margin: 150px auto 20px;
     max-width: 600px;
   }
-
-  footer{
-    text-align: center;
-    margin: 20px auto;
-    position: relative;
-    left: auto;
-    bottom: auto;
-    width: auto;
-    }
+  footer{display:none}
 }
 
 @media print, screen and (max-width: 720px) {
   body {
-    word-wrap:break-word;
+    // word-wrap:break-word;
   }
 
   header {
-    padding:20px 20px;
+    padding: 10px 10px 42px 10px;
+    // padding:20px 20px;
     margin: 0;
     h1 {
       font-size: 28px;
@@ -440,9 +421,7 @@ footer {
     }
   }
 
-  #banner {
-    top: 60px;
-  }
+  #banner {}
 
   section {
     margin-top: 130px;
@@ -455,7 +434,8 @@ footer {
   body {}
   header{
     position: relative;
-    padding: 5px 0px 40px 0px;
+    padding: 10px 10px 42px 10px;
+    // padding: 5px 0px 40px 0px;
     min-height: 0px;
     h1 {
       font-size: 22px;
@@ -514,38 +494,29 @@ footer {
   section {margin-top: 5px;}
   #banner { display: none;}
 }
-//
-// @media print {
-//
-//   body {
-//     padding:0.4in;
-//     font-size:12pt;
-//     color:#444;
+
+// @media print, screen and (max-height: 680px) {
+//   footer {
+//     text-align: center;
+//     margin: 20px auto;
+//     position: relative;
+//     left:auto;
+//     bottom:auto;
+//     width:auto;
 //   }
 // }
 //
-@media print, screen and (max-height: 680px) {
-  footer {
-    text-align: center;
-    margin: 20px auto;
-    position: relative;
-    left:auto;
-    bottom:auto;
-    width:auto;
-  }
-}
-
-@media print, screen and (max-height: 480px) {
-  nav {
-    display: none;
-  }
-
-  footer {
-    text-align: left;
-    margin: 20px auto;
-    position: relative;
-    left:auto;
-    bottom:auto;
-    width:auto;
-  }
-}
+// @media print, screen and (max-height: 480px) {
+//   nav {
+//     display: none;
+//   }
+//
+//   footer {
+//     text-align: left;
+//     margin: 20px auto;
+//     position: relative;
+//     left:auto;
+//     bottom:auto;
+//     width:auto;
+//   }
+// }
