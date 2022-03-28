@@ -430,7 +430,6 @@ footer {
   header {
     padding:20px 20px;
     margin: 0;
-
     h1 {
       font-size: 28px;
       white-space: nowrap;
@@ -469,7 +468,8 @@ footer {
   }
   // #banner { display: none;}
   #banner {
-      top: 60px;
+      position: relative;
+      top: -20px;
     }
   section {
     margin-top: 5px;
