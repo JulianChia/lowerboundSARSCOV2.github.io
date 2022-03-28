@@ -455,7 +455,7 @@ footer {
   body {}
   header{
     position: relative;
-    padding: 5px 0px 30px;
+    padding: 5px 0px 40px;
     min-height: 0px;
     h1 {
       font-size: 22px;
@@ -469,27 +469,27 @@ footer {
   // #banner { display: none;}
   #banner {
     position: relative;
-    top: -40px;
-    .repo {
-      span {
-        position: relative;
-        left: 20px;
-      }
-      a.button {
-        position: relative;
-        left: 20px;
-      }
-    }
-    .download-pdf {
-      span {
-        position: relative;
-        left: -20px;
-      }
-      a.button {
-        position: relative;
-        left: -20px;
-      }
-    }
+    top: -50px;
+    // .repo {
+    //   span {
+    //     position: relative;
+    //     left: 20px;
+    //   }
+    //   a.button {
+    //     position: relative;
+    //     left: 20px;
+    //   }
+    // }
+    // .download-pdf {
+    //   span {
+    //     position: relative;
+    //     left: -20px;
+    //   }
+    //   a.button {
+    //     position: relative;
+    //     left: -20px;
+    //   }
+    // }
   }
   section {
     margin-top: 5px;
