@@ -181,7 +181,7 @@ header {
     font: 34.5px/42.5px 'Copse', "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #ffeca0;
     text-shadow: 2px 2px 5px #235796;
-    // margin-right: 20px;
+    margin-right: 20px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -230,7 +230,7 @@ header {
     span {
       position: absolute;
       top: 0%;
-      margin-left: -250px;
+      margin-left: -180px;
       line-height: 52px;
       font-family: 'Copse', "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 90%;
@@ -242,7 +242,7 @@ header {
     a.button {
       height: 32px;
       width: 32px;
-      margin-left: -100px;
+      margin-left: -40px;
       display: block;
       color: #ffeca0;
       background-image: url(../images/github.png);
@@ -256,7 +256,7 @@ header {
     span {
       position: absolute;
       top: 0%;
-      margin-left: 50px;
+      margin-left: 20px;
       line-height: 52px;
       font-family: 'Copse', "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 90%;
@@ -268,7 +268,7 @@ header {
     a.button {
       height: 32px;
       width: 32px;
-      margin-left: 170px;
+      margin-left: 130px;
       display: block;
       color: #ffeca0;
       background-image: url(../images/download-pdf.png);
@@ -376,10 +376,9 @@ footer {
     width:auto;
     margin:0;
   }
-
   nav{display: none;}
-
-  header, section, footer {
+  footer{display:none}
+  header, section {
     float:none;
     h1 {
       white-space: nowrap;
@@ -389,8 +388,6 @@ footer {
       -ms-text-overflow: ellipsis;
     }
   }
-
-  // header {padding: 10px 10px 42px 10px;}
   #banner {}
   section {
     border:1px solid #e5e5e5;
@@ -399,14 +396,12 @@ footer {
     margin: 150px auto 20px;
     max-width: 600px;
   }
-  footer{display:none}
 }
 
 @media print, screen and (max-width: 720px) {
   body {
     // word-wrap:break-word;
   }
-
   header {
     padding: 10px 10px 42px 10px;
     // padding:20px 20px;
@@ -420,9 +415,7 @@ footer {
       -ms-text-overflow: ellipsis;
     }
   }
-
   #banner {}
-
   section {
     margin-top: 130px;
     margin-bottom: 0px;
@@ -450,26 +443,6 @@ footer {
   #banner {
     position: relative;
     top: -50px;
-    // .repo {
-    //   span {
-    //     position: relative;
-    //     left: 20px;
-    //   }
-    //   a.button {
-    //     position: relative;
-    //     left: 20px;
-    //   }
-    // }
-    // .download-pdf {
-    //   span {
-    //     position: relative;
-    //     left: -20px;
-    //   }
-    //   a.button {
-    //     position: relative;
-    //     left: -20px;
-    //   }
-    // }
   }
   section {
     margin-top: 5px;
